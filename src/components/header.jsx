@@ -17,7 +17,7 @@ const HeaderContainer = styled.div`
   }
 `;
 
-import gatsbyLogo from "../images/gatsby-icon.png";
+import gatsbyLogo from "../images/icon.png";
 
 const Header = () => (
   <HeaderWrapper>
