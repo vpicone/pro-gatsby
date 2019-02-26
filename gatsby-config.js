@@ -31,10 +31,12 @@ module.exports = {
         name: `Cloudsnap`,
         short_name: `Cloudsnap`,
         start_url: `/`,
-        background_color: `#0B4F71`, // indigo-900
-        theme_color: `#0B4F71`, // indigo-900
+        background_color: `#F5F7FA`, // grey-050
+        theme_color: `#0B4F71`, // blue-900
         display: `minimal-ui`,
-        icon: `src/images/icon.png` // This path is relative to the root of the site.
+        icon: `src/images/logo.png`,
+        include_favicon: true,
+        lang: `en-US`
       }
     },
     {
@@ -44,11 +46,11 @@ module.exports = {
         path: `${__dirname}/src/posts`
       }
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sitemap`, // only generated on build
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    "gatsby-plugin-offline"
   ]
 };
